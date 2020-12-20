@@ -67,11 +67,11 @@ class Main {
       // System.out.println();
       if (a.contains((long) -1) || b.contains((long) -1)) {
          if (!a.contains((long) -1))
-            tmp.addAll(a);
+            return a;
          else if (!b.contains((long) -1))
-            tmp.addAll(b);
+            return b;
       } else {
-         tmp.addAll(merge(a, b));
+         return merge(a, b);
       }
       return tmp;
    }
